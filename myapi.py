@@ -52,6 +52,8 @@ def post_file():
     vectors = vectorize(student_notes)
     s_vectors = list(zip(file, vectors))
     ans = list(check_plagiarism())
+    os.remove("./tmp/t1.txt")
+    os.remove("./tmp/t2.txt")
     return jsonify(ans)
 
 
