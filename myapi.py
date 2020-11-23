@@ -54,6 +54,7 @@ def post_file():
     ans = list(check_plagiarism())
     os.remove("./tmp/t1.txt")
     os.remove("./tmp/t2.txt")
+    # hi
     return jsonify(ans)
 
 
